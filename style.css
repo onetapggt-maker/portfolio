@@ -7,3 +7,18 @@ body{margin:0;font-family:Arial,sans-serif;background:#e6f0ff;color:#222}header{
 @media(max-width:650px){.home-page{--background-top:140px}.home-page main{margin-top:180px}}
 
 .home-page header{background:rgba(0,71,171,.72)}
+
+.projects-main{line-height:1.6}
+.projects-intro{max-width:720px;color:#46566b}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0}
+.project-card{min-width:0;padding:22px;background:#f5f8ff;border:1px solid #d5e2f3;border-radius:10px}
+.project-card h2{margin:4px 0 12px;line-height:1.25}
+.project-card p{margin:12px 0}
+.project-card ul{padding-left:20px}
+.project-card li{margin-bottom:7px}
+.project-kind{font-size:13px;color:#526986}
+.project-tech{font-size:14px;color:#244f86;font-weight:bold}
+.project-access{font-size:13px;color:#5e6d80}
+.project-link{display:inline-block;margin-top:8px;color:#0047ab;font-weight:bold;text-underline-offset:3px}
+.other-projects,.project-files{margin-top:30px;padding-top:12px;border-top:1px solid #d5e2f3}
+@media(max-width:700px){.project-grid{grid-template-columns:1fr}.project-card{padding:18px}}
