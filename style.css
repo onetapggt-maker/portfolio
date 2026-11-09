@@ -2,5 +2,6 @@ body{margin:0;font-family:Arial,sans-serif;background:#e6f0ff;color:#222}header{
 .media-pair{display:grid;grid-template-columns:minmax(0,240px) minmax(0,320px);justify-content:center;align-items:center;gap:16px;margin:25px 0}.personal-photo{display:block;width:100%;max-width:240px;max-height:240px;height:auto;object-fit:contain;border-radius:6px}.media-pair .tenor-gif-embed{width:100%!important;max-width:320px;min-width:0}
 
 /* Фон главной страницы */
-.home-page{background-image:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('images/dota-background.jpg');background-size:cover;background-position:center;background-attachment:fixed}
-.home-page main{background:rgba(255,255,255,.92)}
+.home-page{--background-top:74px;background-color:#171a20;background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url('images/dota-background-hd.jpg');background-size:100% auto;background-position:center var(--background-top);background-repeat:no-repeat;background-attachment:scroll}
+.home-page main{margin-top:clamp(140px,18vw,300px);background:rgba(255,255,255,.92)}
+@media(max-width:650px){.home-page{--background-top:140px}.home-page main{margin-top:140px}}
