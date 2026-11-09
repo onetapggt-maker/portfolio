@@ -1,48 +1,48 @@
 <!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Проекты — Портфолио Сеньки</title><link rel="stylesheet" href="style.css?v=projects-5"></head><body class="background-page"><header><a href="index.html"><img class="logo" src="images/logo.svg" alt="Логотип, переход на главную"></a><nav><a href="index.html">Главная</a><a href="about.html">Обо мне</a><a href="skills.html">Навыки</a><a href="projects.html">Проекты</a></nav></header><main class="appear projects-main">
 <h1>Мои проекты</h1>
-<p class="projects-intro">Разрабатываю сервисы, Telegram-ботов и игровые проекты. Здесь — чем я занимаюсь и что уже есть в моих репозиториях.</p>
+<p class="projects-intro">Здесь собрал свои проекты: VPN, игровой сервер, ботов и этот сайт.</p>
 <div class="project-grid">
 <article class="project-card">
 <p class="project-kind">VPN · Telegram · Веб</p><h2>UniversalVPN</h2>
-<p>Платформа для оформления и управления VPN-подписками через Telegram и сайт. Объединяет выдачу доступа, оплату, личный кабинет и инструменты администратора.</p>
-<ul><li>Пробный доступ и платные тарифы с ограничением количества устройств.</li><li>Оплата через ЮKassa и Crypto Pay, промокоды и напоминания об окончании подписки.</li><li>Реферальные бонусы, подарочные подписки и семейные приглашения.</li><li>Партнёрские боты, учёт продаж и заявки на выплаты.</li><li>Диагностика подключения, мониторинг сервисов и резервное копирование базы.</li></ul>
-<p>В репозитории также есть бета-основа клиента <strong>Zenith Connect</strong> на Flutter: вход через Telegram, синхронизация подписки и передача подключения в Happ. Собственный VPN-транспорт клиента ещё запланирован.</p>
+<p>Мой VPN-сервис с Telegram-ботом и сайтом. Через них можно выбрать тариф, оплатить подписку и получить ссылку для подключения.</p>
+<ul><li>Есть пробный период, семейные тарифы, промокоды и бонусы за приглашённых друзей.</li><li>Оплата работает через ЮKassa и Crypto Pay. Бот напоминает, когда подписка заканчивается.</li><li>Для партнёров — отдельные боты, статистика продаж и заявки на выплаты.</li><li>Для управления сервисом — админка, проверка подключения и резервные копии базы.</li></ul>
+<p>Ещё делаю приложение <strong>Zenith Connect</strong> на Flutter. Пока в нём можно войти через Telegram, посмотреть подписку и открыть подключение в Happ. Подключение прямо из приложения ещё в планах.</p>
 <p class="project-tech">Python · FastAPI · aiogram · PostgreSQL · Redis · Docker · Flutter</p>
-<p class="project-access">Исходный код в закрытом репозитории.</p></article>
+<p class="project-access">Код пока закрыт.</p></article>
 <article class="project-card">
 <p class="project-kind">Игровой сервер</p><h2>S-DDR Server</h2>
-<p>Модифицированный сервер на основе DDNet / Teeworlds. Расширяет базовую игру аккаунтами, экономикой и дополнительными игровыми механиками.</p>
-<ul><li>Регистрация, вход, статистика, уровни и переводы игровых монет.</li><li>Магазин оружия, VIP-возможности, кланы и промокоды.</li><li>Дуэли на аренах со ставками в игровых монетах и блок-турниры.</li><li>Награды за удержание флага.</li><li>Веб-панель для управления игроками, объявлениями и промокодами с журналом действий.</li></ul>
-<p>Основа проекта — открытый движок DDNet; отдельная часть работы посвящена серверным дополнениям и управлению сервером через веб-панель.</p>
+<p>Мой сервер для DDNet / Teeworlds. За основу взят DDNet, а поверх него добавлены аккаунты, игровые монеты и новые режимы.</p>
+<ul><li>Игроки могут прокачивать уровень, переводить монеты и покупать оружие.</li><li>Есть дуэли со ставками в игровых монетах, блок-турниры и награды за удержание флага.</li><li>Добавлены кланы, VIP-функции и промокоды.</li><li>Через админку в браузере можно управлять игроками, делать объявления и смотреть историю действий.</li></ul>
+
 <p class="project-tech">C++ · CMake · Node.js · JavaScript · HTML · CSS</p>
-<p class="project-access">Исходный код в закрытом репозитории.</p></article>
+<p class="project-access">Код пока закрыт.</p></article>
 <article class="project-card">
-<p class="project-kind">Исследовательский сервис · Начальный этап</p><h2>NEXUS</h2>
-<p>Идея сервиса, который превращает публичную информацию о компаниях, технологиях, продуктах и событиях в интерактивную карту связей.</p>
-<p>Каждая фактическая связь должна вести к подтверждающему источнику. В планах — граф знаний, временная шкала, сравнение объектов и просмотр доказательств.</p>
-<p><strong>Сейчас:</strong> подготовлены описание продукта, принципы работы и проектная документация. Само приложение ещё не создано, технологии для frontend и backend пока не выбраны.</p>
-<p class="project-tech">Проектирование продукта · Документация · Работа с источниками</p>
-<p class="project-access">Репозиторий закрыт.</p></article>
+<p class="project-kind">Идея в разработке</p><h2>NEXUS</h2>
+<p>Хочу сделать сервис, в котором можно изучать связи между компаниями, людьми, технологиями и событиями. Вместо набора вкладок — карта, где видно, что с чем связано.</p>
+<p>У каждой связи будет ссылка на источник, чтобы можно было проверить информацию. Ещё в планах — хронология событий и сравнение объектов.</p>
+<p>Пока описал идею и то, как сервис должен работать. Самого приложения ещё нет, стек тоже пока не выбрал.</p>
+
+<p class="project-access">Код пока закрыт.</p></article>
 <article class="project-card">
 <p class="project-kind">Windows · Утилита</p><h2>SysMonitor</h2>
-<p>Программа для Windows из репозитория <code>keylogger</code>. Отслеживает нажатия клавиш, сохраняет журнал в локальный файл и поддерживает его отправку через Telegram-бота.</p>
-<p>Проект объединяет обработку событий Windows, запись данных в файл и взаимодействие с Telegram Bot API.</p>
+<p>Небольшая программа на C# для Windows. Записывает нажатия клавиш в файл и может отправить этот файл через Telegram-бота. На GitHub лежит под названием <code>keylogger</code>.</p>
+
 <p class="project-tech">C# · .NET Framework · Windows API · Telegram Bot API</p>
 <a class="project-link" href="https://github.com/onetapggt-maker/keylogger" target="_blank" rel="noopener noreferrer">Посмотреть на GitHub ↗</a></article>
 <article class="project-card">
 <p class="project-kind">Веб-сайт</p><h2>Личное портфолио</h2>
-<p>Этот сайт: несколько страниц об учёбе, навыках и проектах. На главной — фотография, GIF с Shadow Fiend и фон с профилем Dota 2.</p>
-<p>Сайт написан на HTML и CSS, адаптируется к размеру экрана и публикуется через GitHub Pages.</p>
+<p>Сайт, на котором ты сейчас находишься. Здесь немного обо мне, моей учёбе и проектах. Ну и SF на главной.</p>
+<p>Сделан на HTML и CSS, работает на GitHub Pages. Можно открыть и с компьютера, и с телефона.</p>
 <p class="project-tech">HTML · CSS · GitHub Pages</p>
 <a class="project-link" href="https://github.com/onetapggt-maker/portfolio" target="_blank" rel="noopener noreferrer">Посмотреть на GitHub ↗</a></article>
 <article class="project-card">
-<p class="project-kind">Заготовка репозитория</p><h2>ddnet</h2>
-<p>Отдельный репозиторий с начальным README. Кода и описания функций в нём пока нет, поэтому самостоятельного готового проекта здесь ещё нет.</p>
-<p>Разработка игрового сервера представлена выше в <strong>S-DDR Server</strong>.</p>
-<p class="project-access">Репозиторий закрыт.</p></article>
+<p class="project-kind">Пока пусто</p><h2>ddnet</h2>
+<p>Здесь пока только README, показывать особо нечего.</p>
+<p>Сам сервер лежит в другом репозитории — <strong>S-DDR Server</strong>, о нём написал выше.</p>
+<p class="project-access">Код пока закрыт.</p></article>
 </div>
 <section class="other-projects"><h2>Другие проекты</h2>
-<p>Кроме репозиториев выше, я занимаюсь и другими проектами:</p>
+<p>Ещё у меня есть:</p>
 <ul><li><strong>RoyalSMP</strong> — мой Minecraft-сервер.</li><li><strong>Фолио</strong> — сервис для создания и ведения интернет-портфолио.</li><li><strong>Telegram-боты</strong> — боты для отправки анонимных сообщений в Telegram-каналы.</li><li><strong>Бот для Dota 2</strong> — организация игр 1 на 1 на Shadow Fiend.</li></ul></section>
 <section class="project-files"><h2>Файлы</h2><p><a href="files/projects.pdf">Описание проектов (PDF)</a></p><p><a href="files/skills.doc">Навыки (DOC)</a></p><p><a href="images/project.svg">Картинка (SVG)</a></p><p><a href="files/projects.xls">Таблица проектов (XLS)</a></p></section>
 </main><footer></footer></body></html>
