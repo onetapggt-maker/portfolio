@@ -22,3 +22,8 @@ body{margin:0;font-family:Arial,sans-serif;background:#e6f0ff;color:#222}header{
 .project-link{display:inline-block;margin-top:8px;color:#0047ab;font-weight:bold;text-underline-offset:3px}
 .other-projects,.project-files{margin-top:30px;padding-top:12px;border-top:1px solid #d5e2f3}
 @media(max-width:700px){.project-grid{grid-template-columns:1fr}.project-card{padding:18px}}
+
+.about-gallery{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:16px;align-items:center;margin:20px 0}
+.about-gallery a{display:block;min-width:0}
+.about-gallery img{display:block;width:100%;height:auto;max-height:260px;object-fit:contain;border-radius:6px}
+@media(max-width:500px){.about-gallery{grid-template-columns:1fr}.about-gallery img{max-height:240px}}
