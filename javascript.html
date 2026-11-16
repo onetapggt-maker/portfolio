@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание по JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html"><img class="logo" src="images/logo.svg" alt="На главную"></a>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="skills.html">Навыки</a>
+        <a href="projects.html">Проекты</a>
+        <a href="javascript.html">JavaScript</a>
+    </nav>
+</header>
+<main class="appear">
+    <h1>Задание 1 по JavaScript</h1>
+    <h2>1. Ввод и вывод</h2>
+    <p>а) Вывод слова «привет!»</p>
+    <button onclick="alert('привет!')">Показать alert</button>
+    <p>С помощью document.write: <script>document.write("привет!")</script></p>
+
+    <p>б) Сумма двух чисел</p>
+    <button onclick="sum()">Посчитать</button>
+    <p id="sumResult"></p>
+
+    <p>в) parseInt, parseFloat и isNaN — по три примера</p>
+    <button onclick="numbers()">Проверить</button>
+    <div id="numbersResult"></div>
+
+    <h2>2. Функции</h2>
+    <p>а) Кнопка с сообщением</p>
+    <form onsubmit="return false">
+        <input type="button" value="Нажми" onclick="alert('Кнопка работает!')">
+    </form>
+
+    <p>б) Соединение двух строк</p>
+    <button onclick="joinWords()">Соединить строки</button>
+    <p>Результат откроется в новом окне с помощью document.write.</p>
+
+    <p>в) Открытие другого файла</p>
+    <button onclick="location.href='about.html'">Открыть страницу «Обо мне»</button>
+
+    <h2>3. Ветвления</h2>
+    <p>а) Проверка возраста</p>
+    <input type="number" id="age" value="17">
+    <button onclick="checkAge()">Проверить</button>
+
+    <p>б) Выбор товара через switch</p>
+    <select id="food">
+        <option value="сэндвич">Сэндвич</option>
+        <option value="пудинг">Пудинг</option>
+        <option value="слойка">Слойка</option>
+    </select>
+    <button onclick="chooseFood()">Узнать цену</button>
+
+    <h2>4. Циклы</h2>
+    <p>Каждый цикл выводит по 20 строк.</p>
+    <button onclick="showLoops()">Показать циклы</button>
+    <div id="loopsResult"></div>
+</main>
+<script src="javascript-task.js"></script>
+</body>
+</html>
