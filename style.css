@@ -1,35 +1,113 @@
-body{margin:0;font-family:Arial,sans-serif;background:#e6f0ff;color:#222}header{background:#0047ab;padding:12px 20px;display:flex;align-items:center;gap:25px}.logo{width:50px;height:50px;border-radius:5px}nav a{color:white;margin-right:22px;text-decoration:none}nav a:hover{text-decoration:underline}main{max-width:900px;margin:25px auto;padding:20px;background:white}h1,h2{color:#0047ab}.photo{width:280px;max-width:100%;float:left;margin:0 20px 15px 0}.clear{clear:both}footer{text-align:center;padding:15px}.appear{animation:show 1.5s}@keyframes show{from{opacity:0}to{opacity:1}}.background-page{background-image:url('images/background.svg');background-size:cover;background-attachment:fixed}@media(max-width:650px){header{display:block}nav a{display:inline-block;margin:10px 12px 0 0}main{margin:12px}.photo{float:none;display:block;margin-bottom:15px}}
-.media-pair{display:grid;grid-template-columns:minmax(0,280px) minmax(0,320px);justify-content:center;align-items:center;gap:16px;margin:25px 0}.personal-photo{display:block;width:100%;max-width:280px;max-height:280px;height:auto;object-fit:contain;border-radius:6px}.media-pair .tenor-gif-embed{width:100%!important;max-width:320px;min-width:0}
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #e6f0ff;
+    color: black;
+}
 
-/* Фон главной страницы */
-.home-page{--background-top:74px;background-color:#171a20;background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url('images/dota-background-hd.jpg');background-size:100% auto;background-position:center calc(var(--background-top) - 8vw);background-repeat:no-repeat;background-attachment:scroll}
-.home-page main{margin-top:clamp(180px,24vw,360px);background:rgba(255,255,255,.78)}
-@media(max-width:650px){.home-page{--background-top:140px}.home-page main{margin-top:180px}}
+header {
+    background: #0047ab;
+    padding: 15px;
+}
 
-.home-page header{background:rgba(0,71,171,.72)}
+.logo {
+    width: 45px;
+    vertical-align: middle;
+}
 
-.projects-main{line-height:1.6}
-.projects-intro{max-width:720px;color:#46566b}
-.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0}
-.project-card{min-width:0;padding:22px;background:#f5f8ff;border:1px solid #d5e2f3;border-radius:10px}
-.project-card h2{margin:4px 0 12px;line-height:1.25}
-.project-card p{margin:12px 0}
-.project-card ul{padding-left:20px}
-.project-card li{margin-bottom:7px}
-.project-kind{font-size:13px;color:#526986}
-.project-tech{font-size:14px;color:#244f86;font-weight:bold}
-.project-access{font-size:13px;color:#5e6d80}
-.project-link{display:inline-block;margin-top:8px;color:#0047ab;font-weight:bold;text-underline-offset:3px}
-.other-projects,.project-files{margin-top:30px;padding-top:12px;border-top:1px solid #d5e2f3}
-@media(max-width:700px){.project-grid{grid-template-columns:1fr}.project-card{padding:18px}}
+nav {
+    display: inline-block;
+}
 
-.about-gallery{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:16px;align-items:center;margin:20px 0}
-.about-gallery a{display:block;min-width:0}
-.about-gallery img{display:block;width:100%;height:auto;max-height:260px;object-fit:contain;border-radius:6px}
-@media(max-width:500px){.about-gallery{grid-template-columns:1fr}.about-gallery img{max-height:240px}}
+nav a {
+    color: white;
+    margin: 10px;
+}
 
-.project-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.project-gallery img{width:100%;max-height:260px;aspect-ratio:3/2;object-fit:contain}
-.project-gallery .ddnet-project-image{grid-column:1/-1;background:#182131;border-radius:6px;padding:20px;box-sizing:border-box}
-.project-gallery .ddnet-project-image img{max-height:140px;aspect-ratio:auto}
-@media(max-width:500px){.project-gallery{grid-template-columns:1fr}}
+main {
+    background: white;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #0047ab;
+}
+
+img {
+    max-width: 100%;
+}
+
+.media-pair {
+    text-align: center;
+}
+
+.personal-photo {
+    width: 250px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.tenor-gif-embed {
+    display: inline-block;
+    width: 300px !important;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.home-page {
+    background: #dce8f7 url("images/dota-background-hd.jpg") center top / 100% auto no-repeat;
+}
+
+.home-page main {
+    margin-top: 250px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.background-page {
+    background: #e6f0ff url("images/background.svg") center / cover fixed;
+}
+
+.about-gallery img {
+    width: 280px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.project-card {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+.project-kind, .project-tech, .project-access {
+    color: #555555;
+}
+
+footer {
+    text-align: center;
+}
+
+.appear {
+    animation: show 1s;
+}
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+    }
+
+    .home-page main {
+        margin-top: 120px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
