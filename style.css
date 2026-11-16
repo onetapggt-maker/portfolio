@@ -112,3 +112,22 @@ footer {
         margin: 5px;
     }
 }
+
+.photo-with-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    vertical-align: middle;
+}
+
+.photo-with-text p {
+    width: 150px;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .photo-with-text {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
